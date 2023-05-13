@@ -19,7 +19,7 @@ type SelectedFile = {
   const [address, setAddress] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
 
-  const [subject, setSubject] = useState('');
+  const [requirements, setRequirements] = useState('');
   const [cost, setCost] = useState('');
 
   const [scheduleItems, setScheduleItems] = useState([
@@ -114,36 +114,17 @@ type SelectedFile = {
 
           <fieldset>
             <legend>Requisitos para matrícula</legend>
-            <Select
-              name="subject"
-              label="Matéria"
-              value={subject}
-              onChange={(e) => { setSubject(e.target.value) }}
-              options={[
-                { value: 'Artes', label: 'Artes' },
-                { value: 'Biologia', label: 'Biologia' },
-                { value: 'Ciências', label: 'Ciências' },
-                { value: 'Educação Física', label: 'Educação Física' },
-                { value: 'Física', label: 'Física' },
-                { value: 'Geografia', label: 'Geografia' },
-                { value: 'Química', label: 'Química' },
-                { value: 'História', label: 'História' },
-                { value: 'Matemática', label: 'Matemática' },
-                { value: 'Português', label: 'Português' },
-                { value: 'Inglês', label: 'Inglês' },
-              ]}
-            />
             <Input
-              name="cost"
-              label="Custo da sua hora por aula"
-              value={cost}
-              onChange={(e) => { setCost(e.target.value) }}
+              name="requirements"
+              label="Requisitos"
+              value={requirements}
+              onChange={(e) => { setRequirements(e.target.value) }}
             />
           </fieldset>
 
           <fieldset>
             <legend>
-                Possui mais de uma unidade?
+                Horarios disponíveis para matrícula
               <button onClick={addNewScheduleItem} type="button">+ Novo Horário</button>
             </legend>
             {scheduleItems.map((scheduleItem, index) => {
