@@ -76,11 +76,6 @@
     background: var(--green-dark);
   }
   
-  .aside-wrapper {
-    flex: 1;
-    min-height: 100vh;
-    background: var(--background);
-  }
   
   .aside-wrapper aside {
     height: 100%;
