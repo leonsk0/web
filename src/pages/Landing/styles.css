@@ -1,0 +1,79 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white-light);
+  background: var(--background);
+}
+
+#page-landing-content {
+  width: 1200px;
+  height: 470px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 643px;
+  height: 419px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin-bottom: 18px;
+
+  font: 600 4rem Inter;
+}
+
+span {
+  font: 400 2rem Nunito;
+  color: var(--white);
+}
+
+.buttons {
+  width: 450px;
+  height: 54px;
+
+  display: flex;
+
+  margin-top: 40px;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe, .school {
+  width: 190px;
+  height: 54px;
+
+  padding: 15px 54px;
+  border: 2px solid #602AD9;
+  border-radius: 6px;
+
+  font-size: 1.5rem;
+  color: var(--white-light);
+  text-decoration: none;
+}
+.subscribe {
+  margin-right: 36px;
+  background: var(--purple-dark);
+}
+
+.school img {
+  margin-left: 16px;
+}

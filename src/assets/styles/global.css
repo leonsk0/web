@@ -1,0 +1,65 @@
+:root {
+  --background: linear-gradient(329.54deg, #7329D1 0%, #7949FF 100%, #7949FF 100%, #7949FF 100%);
+  --purple: #7329D1;
+  --purple-light: #7949FF;
+  --purple-dark: #602AD9;
+  --purple-light-secondary: #F2EBF5;
+  --yellow: #FFE600;
+  --yellow-light: #FFEC44;
+  --yellow-dark: #F6DD00;
+  --green: #32D957;
+  --green-light: #50E170;
+  --green-dark: #28BB49;
+  --red: #E33D3D;
+  --red-light: #FF5252;
+  --red-dark: #E20505;
+  --white: #FAFAFC;
+  --white-light: #FFFFFF;
+  --white-dark: #F0F0F7;
+  --black: #1A1A1A;
+  --black-light: #303030;
+  --black-dark: #101010;
+  --gray-1: #32264D;
+  --gray-2: #6A6180;
+  --gray-3: #9C98A6;
+  --gray-4: #99ABC3;
+  --gray-5: #DCDCE5;
+  --gray-6: #E6E6F0;
+  --gray-7: #F5F8FA;
+  --gray-8: #D3E2E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--purple-light-secondary);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, input, button, textarea {
+  font: 500 1.6rem Nunito;
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
