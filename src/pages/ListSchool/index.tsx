@@ -17,7 +17,7 @@ export function ListSchool() {
   
     <div className="div-content">
       <div className="div-header">
-        <p>
+        <p className ="p-inst">
           Encontre <span>3 instituições</span> na sua cidade
         </p>
         <div className="div-select-wrapper">

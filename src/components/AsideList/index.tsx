@@ -91,7 +91,7 @@ export function AsideList() {
       </div>
     </div>
     <h1 className="content-header">Escolha uma escola</h1>
-    <p>Ao clicar, você poderá ver mais detalhes sobre a instituição de ensino.</p>
+    <p className="p-header">Ao clicar, você poderá ver mais detalhes sobre a instituição de ensino.</p>
     {/* <div className="aside-content">
       <h1 className="content-header">Filtros</h1>
       <div className="content-filters">

@@ -8,17 +8,19 @@ type CardProps = {
 
 export function Card({ path, name, type }: CardProps) {
   return (
-    <div className="container">
+    <div className="container card-list">
   <div className="pet-image">
     <img src={path} alt={`Foto de ${name}`} />
   </div>
   <div>
     <div className="type-icon">
-      <div style={{ backgroundColor: type === 'cat' ? '#F4D35E' : '#F15156' }}>
+      <div>
         <img src={logo} alt="" />
-      </div>
+        <p className="name">{name}</p>
+
+      </div> 
     </div>
-    <p className="name">{name}</p>
+   
   </div>
 </div>
 
