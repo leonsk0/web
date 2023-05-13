@@ -1,11 +1,12 @@
 aside {
     flex: 1;
   
-    background: var(--color-primary);
+    background: var(--background);
   
     align-items: center;
     justify-content: center;
     padding: 30px;
+    max-width: 440px;
   }
   
   div.background-image {

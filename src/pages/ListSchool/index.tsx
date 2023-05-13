@@ -33,11 +33,6 @@ export function ListSchool() {
         <Card path={dog} type="dog" name="Alfredo" />
         <Card path={dog} type="cat" name="Tobia" />
         <Card path={dog} type="dog" name="Alfredo" />
-        <Card path={dog} type="cat" name="Tobia" />
-        <Card path={dog} type="dog" name="Alfredo" />
-        <Card path={dog} type="cat" name="Tobia" />
-        <Card path={dog} type="dog" name="Alfredo" />
-        <Card path={dog} type="cat" name="Tobia" />
       </div>
     </div>
   </div>

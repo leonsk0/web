@@ -3,12 +3,12 @@
 .aside-container {
   width: 392px;
   height: 100vh;
-  background-color: #f15156;
+  background-color: var(--background);
 }
 
 .aside-header {
   height: 241px;
-  background-color: #e44449;
+  background-color: var(--background);
 }
 
 .aside-header img {
@@ -36,7 +36,7 @@
   padding: 21px 16px;
   border-radius: 15px;
   background: transparent;
-  border: 1px solid #f15156;
+  border: 1px solid var(--background);
   outline: none;
 }
 
@@ -70,6 +70,10 @@
   display: flex;
   flex-direction: column;
   padding: 35px 56px;
+}
+
+h1 {
+  color: var(--white-light);
 }
 
 .content-header {

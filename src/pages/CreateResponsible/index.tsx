@@ -13,6 +13,8 @@ function CreateResponsible() {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
+  const [cep, setCep] = useState('');
+  const [number, setNumber] = useState('');
 
   return (
     <div className='sign-page'>
@@ -28,7 +30,7 @@ function CreateResponsible() {
 
         <div className='inputs'>
           <FormInput
-            label='Nome'
+            label='Nome Completo do Responsável'
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -36,11 +38,27 @@ function CreateResponsible() {
             isPassword={false}
           />
           <FormInput
-            label='Sobrenome'
+            label='Nome Completo do filho'
             onChange={(e) => {
               setSurname(e.target.value);
             }}
             value={surname}
+            isPassword={false}
+          />
+          <FormInput
+            label='Cep'
+            onChange={(e) => {
+              setCep(e.target.value);
+            }}
+            value={cep}
+            isPassword={false}
+          />
+          <FormInput
+            label='Número da residência'
+            onChange={(e) => {
+              setNumber(e.target.value);
+            }}
+            value={number}
             isPassword={false}
           />
           <FormInput
