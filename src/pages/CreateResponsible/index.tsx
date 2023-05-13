@@ -82,9 +82,7 @@ function CreateResponsible() {
         <Link to='/confirmation'>Concluir cadastro</Link>
         </div>
       </div>
-      <div className='aside-wrapper'>
         <Aside />
-      </div>
     </div>
   );
 }
