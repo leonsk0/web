@@ -46,7 +46,7 @@ function CreateResponsible() {
             isPassword={false}
           />
           <FormInput
-            label='Cep'
+            label='CEP'
             onChange={(e) => {
               setCep(e.target.value);
             }}

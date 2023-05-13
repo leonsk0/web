@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../../assets/images/icons/logotipo-icon.svg'
 
 type CardProps = {
@@ -16,7 +17,7 @@ export function Card({ path, name, type }: CardProps) {
     <div className="type-icon">
       <div>
         <img src={logo} alt="" />
-        <p className="name">{name}</p>
+        <p className="name"><Link to='/specify' className="link">{name}</Link></p>
 
       </div> 
     </div>

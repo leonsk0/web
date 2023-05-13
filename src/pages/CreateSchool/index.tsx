@@ -96,7 +96,7 @@ type SelectedFile = {
             />
 
             <Input
-              name=" Número de WhatsApp"
+              name="Número de WhatsApp"
               label="WhatsApp"
               value={whatsapp}
               onChange={(e) => { setWhatsapp(e.target.value) }}
@@ -104,9 +104,9 @@ type SelectedFile = {
             <Input className="photo" type="file" accept="image/*" multiple onChange={handleImageUpload} label={'Fotos'} name={'photo'} />
             <div>
             {selectedImages.map((image, index) => (
-            <div key={index}>
-                <img src={fileIcon} alt='Ícone de documento' /> {image.name}  
-                <button onClick={() => handleRemoveImage(image.name)}> <img src={removeIcon} alt='Ícone de remover' /></button>
+            <div className="containerImage" key={index}>
+                <img className="iconPhoto" src={fileIcon} alt='Ícone de documento' /> {image.name}  
+                <button className="buttonPhoto" onClick={() => handleRemoveImage(image.name)}> <img src={removeIcon} alt='Ícone de remover' /></button>
             </div>
         ))}
             </div>

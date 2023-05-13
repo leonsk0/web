@@ -19,7 +19,7 @@
     border: 1px solid var(--gray-8);
     outline: 0;
     padding: 0 1.6rem;
-    font: 1.6rem Archivo;
+    font: 1.6rem Nunito;
   }
   
   .input-block:focus-within::after {

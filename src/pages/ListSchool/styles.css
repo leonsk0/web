@@ -90,6 +90,16 @@ text-align: center;
 margin-top: 1.5rem;
   }
 
+  .card-list p .link{
+   text-decoration: none;
+   color: #7532DE;
+   font-weight: 700;
+font-size: 18px;
+line-height: 120%;
+text-align: center;
+margin-top: 1.5rem;
+  }
+
   .div-display .type-icon div{
     position: relative;
     height: 70px;

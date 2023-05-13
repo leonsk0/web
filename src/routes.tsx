@@ -4,6 +4,7 @@ import CreateSchool from "./pages/CreateSchool";
 import Confirmation from "./pages/Confirmation";
 import CreateResponsible from "./pages/CreateResponsible";
 import { ListSchool } from "./pages/ListSchool";
+import Specify from "./pages/Specify";
 
 function Routes() {
     return (
@@ -13,6 +14,7 @@ function Routes() {
             <Route path="/responsible" component={CreateResponsible} />
             <Route path="/school-list" component={ListSchool} />
             <Route path="/confirmation" component={Confirmation} />
+            <Route path="/specify" component={Specify} />
         </BrowserRouter>
     );
 }
