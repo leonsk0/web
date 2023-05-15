@@ -3,6 +3,7 @@ import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import fileIcon from '../../assets/images/icons/file-icon.svg';
+import nuvem from '../../assets/images/icons/nuvem-icon.svg';
 import removeIcon from '../../assets/images/icons/remove-icon.svg';
 import './styles.css';
 import { Link } from 'react-router-dom';
@@ -20,7 +21,6 @@ type SelectedFile = {
   const [whatsapp, setWhatsapp] = useState('');
 
   const [requirements, setRequirements] = useState('');
-  const [cost, setCost] = useState('');
 
   const [scheduleItems, setScheduleItems] = useState([
     { week_day: 0, from: '', to: '' },
@@ -101,13 +101,26 @@ type SelectedFile = {
               value={whatsapp}
               onChange={(e) => { setWhatsapp(e.target.value) }}
             />
-            <Input className="photo" type="file" accept="image/*" multiple onChange={handleImageUpload} label={'Fotos'} name={'photo'} />
+            <p className="titlePhoto">Fotos</p>
+            <div className="photoContainer">
+              <img className="iconNuvem" src={nuvem} alt='Ícone de nuvem' />
+              <label htmlFor="fileInput" className="customLabel">
+                Clique para escolher o arquivo
+              <Input className="photo" type="file" id="fileInput" accept="image/*" multiple onChange={handleImageUpload} label={''} name="photo" />
+              </label>
+            </div>
+
             <div>
             {selectedImages.map((image, index) => (
-            <div key={index}>
-                <img src={fileIcon} alt='Ícone de documento' /> {image.name}  
-                <button onClick={() => handleRemoveImage(image.name)}> <img src={removeIcon} alt='Ícone de remover' /></button>
+            <div className="containerImage" key={index}>
+            <img className="iconPhoto" src={fileIcon} alt='Ícone de documento' />
+            <div className="imageWrapper">
+              <p className="imageName">{image.name}</p>
             </div>
+            <button className="buttonPhoto" onClick={() => handleRemoveImage(image.name)}>
+              <img src={removeIcon} alt='Ícone de remover' />
+            </button>
+          </div>
         ))}
             </div>
           </fieldset>

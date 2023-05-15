@@ -35,7 +35,7 @@
   }
   
   .page-header .header-content strong {
-    font: 700 3.6rem Archivo;
+    font: 700 3.6rem Inter;
     line-height: 4.2rem;
     color: var(--white-light);
   }
