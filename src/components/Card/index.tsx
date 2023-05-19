@@ -1,27 +1,25 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/icons/logotipo-icon.svg'
-
+import './styles.css';
 type CardProps = {
   path: string
   name: string
-  type: 'dog' | 'cat'
+  type: 'public' | 'private'
 }
 
-export function Card({ path, name, type }: CardProps) {
+export function Card({ path, name}: CardProps) {
   return (
-    <div className="container card-list">
-  <div className="pet-image">
+    <div className="containerCard">
+  <div className="cardImage">
     <img src={path} alt={`Foto de ${name}`} />
   </div>
   <div>
-    <div className="type-icon">
+    <div className="cardIcon">
       <div>
         <img src={logo} alt="" />
-        <p className="name"><Link to='/specify' className="link">{name}</Link></p>
-
       </div> 
     </div>
-   
+    <p className="name"><Link to='/specify' className="link">{name}</Link></p>
   </div>
 </div>
 

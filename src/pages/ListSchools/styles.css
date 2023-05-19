@@ -7,7 +7,7 @@
   .div-content {
     flex: 1;
     background-color: #F2EBF5;
-    padding: 154px 32px 50px;
+    padding: 60px 32px 50px;
     height: 100vh;
     overflow-y: scroll;
   }
@@ -84,20 +84,20 @@
   .card-list p{
     color: #7532DE;
     font-weight: 700;
-font-size: 18px;
-line-height: 120%;
-text-align: center;
-margin-top: 1.5rem;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 1.5rem;
   }
 
-  .card-list p .link{
+  .card-list p .link {
    text-decoration: none;
    color: #7532DE;
    font-weight: 700;
-font-size: 18px;
-line-height: 120%;
-text-align: center;
-margin-top: 1.5rem;
+   font-size: 18px;
+   line-height: 120%;
+   text-align: center;
+   margin-top: 1.5rem;
   }
 
   .div-display .type-icon div{
