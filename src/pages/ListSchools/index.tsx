@@ -7,9 +7,6 @@ import dog from '../../assets/images/school.png'
 import "./styles.css"
 
 export function ListSchool() {
-  function handleFilterByPetType() {
-    // TO DO
-  }
 
   return (
     <div className="div-container">
