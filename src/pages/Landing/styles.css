@@ -32,7 +32,7 @@
 }
 
 h1 {
-  margin-top: 100px;
+  margin-top: 16px;
   color: var(--white-light);
 
   font: 600 4rem Inter;
@@ -51,7 +51,9 @@ span {
 
   margin-top: 40px;
 }
-
+.title {
+  width: 487px;
+}
 .buttons a {
   display: flex;
   align-items: center;
