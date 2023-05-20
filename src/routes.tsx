@@ -4,6 +4,7 @@ import CreateSchool from "./pages/CreateSchool";
 import Confirmation from "./pages/Confirmation";
 import CreateResponsible from "./pages/CreateResponsible";
 import { ListSchool } from "./pages/ListSchools";
+import DetailsSchool from "./pages/DetailsSchool";
 
 function Routes() {
     return (
@@ -12,6 +13,7 @@ function Routes() {
             <Route path="/school" component={CreateSchool} />
             <Route path="/responsible" component={CreateResponsible} />
             <Route path="/school-list" component={ListSchool} />
+            <Route path="/details" component={DetailsSchool} />
             <Route path="/confirmation" component={Confirmation} />
         </BrowserRouter>
     );

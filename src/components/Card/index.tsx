@@ -19,7 +19,7 @@ export function Card({ path, name}: CardProps) {
         <img src={logo} alt="" />
       </div> 
     </div>
-    <p className="name"><Link to='/specify' className="link">{name}</Link></p>
+    <p className="name"><Link to='/details' className="link">{name}</Link></p>
   </div>
 </div>
 
