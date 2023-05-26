@@ -4,7 +4,7 @@ import school from '../../assets/images/school.png'
 import './styles.css';
 import { Link } from "react-router-dom";
 
-export default function DetailsSchool() {
+export default function RequestLiberation() {
 
   return (
     <div id="page-teacher-form" className="container">
@@ -37,7 +37,7 @@ export default function DetailsSchool() {
           </div>
 
           <div className="detailsButton">
-            <Link className="linkButton" to='/request'>Solicitar Cadastro</Link>
+            <Link className="linkButton" to='/liberation-confirmation'>Entrar em contato</Link>
           </div>
         </div>
       </div>
