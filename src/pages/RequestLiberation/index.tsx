@@ -31,9 +31,15 @@ export default function RequestLiberation() {
             <span id="address" className="details-description">Endereço: Rua. Marechal Deodoro, 154</span>
             <p className="details-description">Telefone: (13) 99293-1142</p>
           </div>
-          <div className="detailsDescription">       
+          <div id="containerTitle" className="detailsDescription">       
             <h2 className="details-title">Horário de atendimento</h2>
             <p className="details-description">Segunda a Sexta: Das 12:00 ás 18:00</p>
+          </div>
+          <div className="detailsDescription">       
+            <h2 className="details-title">Liberação de aluno</h2>
+            <span className="details-description">Gostaria de fazer uma solicitação para liberar seu filho?</span>
+            <br />
+            <Link className="requestLiberation" to=''>+ Fazer pedido de liberação</Link>
           </div>
 
           <div className="detailsButton">

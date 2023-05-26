@@ -68,3 +68,12 @@ a {
 .linkButton {
   color: var(--white-light);
 }
+
+.requestLiberation {
+  background: none;
+  border: 0;
+  color: var(--purple);
+  font: 700 1.6rem Inter;
+  cursor: pointer;
+  transition: color 0.2s;
+}
