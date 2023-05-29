@@ -1,0 +1,41 @@
+.mainDetails {
+  background: var(--white-light);
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+}
+
+.containerPersona {
+  display: flex;
+  align-items: center;
+  margin: 32px 0px 0px 32px;
+}
+
+span {
+  color: var(--gray-2);
+}
+
+.divText {
+  display: flex;
+  flex-direction: column;
+}
+
+.divPhoto {
+  width: 80px;
+  height: 80px;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 80px;
+
+  margin-right: 16px;
+}
+
+.containerTextDescription {
+  margin: 32px 0px 0px 32px;
+}
+
+.containerCart {
+  max-width: 122px;
+  max-height: 136px;
+  border: 1px solid var(--gray-2);
+}

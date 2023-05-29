@@ -38,7 +38,7 @@ h1 {
   font: 600 4rem Inter;
 }
 
-span {
+.landingDescription {
   font: 400 2rem Nunito;
   color: var(--white);
 }

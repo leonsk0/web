@@ -8,6 +8,7 @@ import DetailsSchool from "./pages/DetailsSchool";
 import RequestConfirmation from "./pages/RequestConfirmation";
 import RequestLiberation from "./pages/RequestLiberation";
 import LiberationConfirmation from "./pages/LiberationConfirmation";
+import Report from "./pages/Reports";
 
 function Routes() {
     return (
@@ -25,6 +26,8 @@ function Routes() {
 
             <Route path="/liberation" component={RequestLiberation} />
             <Route path="/liberation-confirmation" component={LiberationConfirmation} />
+
+            <Route path="/report" component={Report} />
         </BrowserRouter>
     );
 }

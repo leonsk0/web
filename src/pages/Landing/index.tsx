@@ -14,10 +14,10 @@ function Landing() {
         <img src={logo} alt="Logo Creseri" className="logo" />
         </div>
         <h1>A plataforma amiga dos pais.</h1>
-        <span>Matricule seu filho sem precisar sair do conforto de sua casa.</span>
+        <p className="landingDescription">Matricule seu filho sem precisar sair do conforto de sua casa.</p>
         <div className="buttons">
           <Link to="/responsible" className="subscribe">Inscreva-se</Link>
-          <Link to="/school" className="school">Instituições <img src={arrowButton} alt="Ícone de flecha" /></Link>
+          <Link to="/report" className="school">Instituições <img src={arrowButton} alt="Ícone de flecha" /></Link>
         </div>
       </div>
 
