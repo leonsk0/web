@@ -31,11 +31,86 @@ span {
 }
 
 .containerTextDescription {
-  margin: 32px 0px 0px 32px;
+  margin: 32px 32px 0px 32px;
+}
+
+.containerTextP {
+  color: var(--gray-2);
+  font: 400 1.75rem Nunito;
+}
+
+.containerListCart {
+  display: flex;
+  padding: 80px 32px 16px 32px;
 }
 
 .containerCart {
-  max-width: 122px;
-  max-height: 136px;
-  border: 1px solid var(--gray-2);
+  width: 122px;
+  height: 136px;
+  border: 1px solid var(--gray-4);
+  border-radius: 8px;
+  background-color: var(--gray-7);
+  margin-right: 16px;
+  padding: 16px 0px 16px 16px;
+}
+
+.spanCart {
+  font: 400 1.25rem Nunito;
+  color: var(--gray-3);
+
+}
+
+.pCart {
+  font: 800 1.75rem Inter;
+  color: var(--gray-4);
+}
+
+#spanCart, #pCart {
+  color: var(--white);
+}
+
+#containerCart {
+  background-color: var(--purple-light);
+  border-color: var(--gray-1);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  border-top: 1px solid var(--gray-6);
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 6.4rem;
+  padding: 32px;
+}
+
+footer div {
+  display: flex;
+}
+
+footer div span {
+  padding-right: 16px;
+  font: 400 1.75rem Inter;
+}
+
+footer div span:last-child {
+  color: var(--purple);
+  font: 800 1.75rem Inter;
+}
+
+footer a {
+    width: 40%;
+    height: 5.6rem;
+    background: var(--green);
+    color: var(--white-light);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
