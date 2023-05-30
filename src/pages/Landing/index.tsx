@@ -17,7 +17,7 @@ function Landing() {
         <p className="landingDescription">Matricule seu filho sem precisar sair do conforto de sua casa.</p>
         <div className="buttons">
           <Link to="/responsible" className="subscribe">Inscreva-se</Link>
-          <Link to="/report" className="school">Instituições <img src={arrowButton} alt="Ícone de flecha" /></Link>
+          <Link to="/liberation-request" className="school">Instituições <img src={arrowButton} alt="Ícone de flecha" /></Link>
         </div>
       </div>
 

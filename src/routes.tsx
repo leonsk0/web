@@ -9,6 +9,8 @@ import RequestConfirmation from "./pages/RequestConfirmation";
 import RequestLiberation from "./pages/RequestLiberation";
 import LiberationConfirmation from "./pages/LiberationConfirmation";
 import Report from "./pages/Reports";
+import LiberationRequest from "./pages/LiberationRequest";
+import SendDocuments from "./pages/SendDocuments";
 
 function Routes() {
     return (
@@ -18,13 +20,14 @@ function Routes() {
             <Route path="/responsible" component={CreateResponsible} />
             <Route path="/confirmation" component={Confirmation} />
 
-
+            <Route path="/documents-school" component={SendDocuments} />
             <Route path="/school-list" component={ListSchool} />
 
             <Route path="/details" component={DetailsSchool} />
             <Route path="/request" component={RequestConfirmation} />
 
             <Route path="/liberation" component={RequestLiberation} />
+            <Route path="/liberation-request" component={LiberationRequest} />
             <Route path="/liberation-confirmation" component={LiberationConfirmation} />
 
             <Route path="/report" component={Report} />

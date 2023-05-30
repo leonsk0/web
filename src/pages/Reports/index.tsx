@@ -8,6 +8,9 @@ export default function Report() {
   return (
     <div id="page-teacher-form" className="container">
       <PageHeader title="Relatório"/>
+      <div className="containerContent">
+        <h2>Estes são os resultados dos pedidos de liberação do aluno André da Guerra</h2>
+      </div>
 
       <div className="form">
       <div className="mainDetails">

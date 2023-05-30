@@ -40,6 +40,7 @@ export default function RequestLiberation() {
             <span className="details-description">Gostaria de fazer uma solicitação para liberar seu filho?</span>
             <br />
             <Link className="requestLiberation" to=''>+ Fazer pedido de liberação</Link>
+            <Link className="requestLiberation" to=''>Ver pedidos de liberação anteriores</Link>
           </div>
 
           <div className="detailsButton">
