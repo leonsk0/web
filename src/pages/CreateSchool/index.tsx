@@ -180,7 +180,7 @@ type SelectedFile = {
           </fieldset>
 
           <footer>
-            <Link to='/confirmation'>Salvar Cadastro</Link>
+            <Link to='/confirmation-school'>Salvar Cadastro</Link>
           </footer>
         </form>
       </main>

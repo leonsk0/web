@@ -5,18 +5,18 @@ import './styles.css';
 
 import sucessIcon from '../../assets/images/icons/success-check-icon.svg';
 
-function ConfirmationDocuments() {
+function ConfirmationSchool() {
   return (
     <div className='recovery-success'>
       <div className='recovery-background'>
         <img src={sucessIcon} alt='Ícone de check' />
-        <h1>Solicitação enviada</h1>
-        <p>Enviamos a solicitação a instituição escolhida.</p>
-        <p>Em breve ela irá retornar o contato pelo e-mail cadastrado na plataforma.</p>
-        <Link to='/liberation'>Voltar</Link>
+        <h1>Cadastro concluído</h1>
+        <p>Agora você faz parte da plataforma da Creseri.</p>
+        <p>Veja a seguir os pedidos de inscrição para a sua instituição.</p>
+        <Link to='/demand'>Ver pedidos</Link>
       </div>
     </div>
   );
 }
 
-export default ConfirmationDocuments;
+export default ConfirmationSchool;

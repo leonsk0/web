@@ -13,6 +13,7 @@ import LiberationRequest from "./pages/LiberationRequest";
 import SendDocuments from "./pages/SendDocuments";
 import ConfirmationDocuments from "./pages/ConfirmationDocuments";
 import ConfirmationReports from "./pages/ConfirmationReports";
+import ConfirmationSchool from "./pages/ConfirmationSchool";
 
 function Routes() {
     return (
@@ -33,6 +34,8 @@ function Routes() {
             <Route path="/confirmation-report" component={ConfirmationReports} />
 
             <Route path="/school" component={CreateSchool} />
+            <Route path="/confirmation-school" component={ConfirmationSchool} />
+            <Route path="/demand" component={ConfirmationSchool} />
         </BrowserRouter>
     );
 }
