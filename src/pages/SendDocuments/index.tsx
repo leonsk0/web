@@ -57,10 +57,11 @@ export default function SendDocuments() {
           </div>
 
           <div className="containerTextDescription">
-            <p className="containerTextP">Os documentos para a matrícula na instituição foram recebidos, verifique a seguir:</p>
+            <p className="containerTextP">Envie os documentos necessários para a matrícula na instituição a seguir:</p>
+            <p className="titlePhoto">Fotos</p>
           </div>
 
-          <p className="titlePhoto">Fotos</p>
+          <div className="containerPhoto">
             <div className="photoContainerSend">
               <img className="iconNuvem" src={nuvem} alt='Ícone de nuvem' />
               <label htmlFor="fileInput" className="customLabel">
@@ -68,13 +69,14 @@ export default function SendDocuments() {
               <Input className="photo" type="file" id="fileInput" accept="image/*" multiple onChange={handleImageUpload} label={''} name="photo" />
               </label>
             </div>
+            </div>
 
-            <div>
+            <div className="containerPhoto">
             {selectedImages.map((image, index) => (
-            <div className="containerImage" key={index}>
-            <img className="iconPhoto" src={fileIcon} alt='Ícone de documento' />
-            <div className="imageWrapper">
-              <p className="imageName">{image.name}</p>
+            <div className="containerSendImage" key={index}>
+            <div className="imageSendWrapper">
+              <img className="iconSendPhoto" src={fileIcon} alt='Ícone de documento' />
+              <span className="imageSendName">{image.name}</span>
             </div>
             <button className="buttonPhoto" onClick={() => handleRemoveImage(image.name)}>
               <img src={removeIcon} alt='Ícone de remover' />

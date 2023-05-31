@@ -6,7 +6,7 @@
 }
 
 .photoContainerSend {
-  width: 70%;
+  width: 92%;
   height: 5.6rem;
   margin-top: 0.8rem;
   border-radius: 0.8rem;
@@ -22,10 +22,31 @@
   height: 100%;
 }
 
-.containerPersona {
+.containerPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerSendImage {
   display: flex;
   align-items: center;
-  margin: 32px 0px 0px 32px;
+  justify-content: space-between;
+  width: 92%;
+
+  border: 1px solid var(--gray-8);
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 0px 12px;
+}
+
+.imageSendWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.imageSendName {
+  margin-left: 16px;
 }
 
 span {
