@@ -5,18 +5,18 @@ import './styles.css';
 
 import sucessIcon from '../../assets/images/icons/success-check-icon.svg';
 
-function LiberationConfirmation() {
+function ConfirmationDocuments() {
   return (
     <div className='recovery-success'>
       <div className='recovery-background'>
         <img src={sucessIcon} alt='Ícone de check' />
-        <h1>Pedido de liberação enviado</h1>
-        <p>Enviamos o pedido de liberação para a instituição escolhida.</p>
+        <h1>Cadastro concluído</h1>
+        <p>Enviamos a solicitação a instituição escolhida.</p>
         <p>Em breve ela irá retornar o contato pelo e-mail cadastrado na plataforma.</p>
-        <Link to='/report'>Ver pedidos</Link>
+        <Link to='/liberation'>Voltar</Link>
       </div>
     </div>
   );
 }
 
-export default LiberationConfirmation;
+export default ConfirmationDocuments;

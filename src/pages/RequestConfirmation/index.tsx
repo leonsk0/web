@@ -13,7 +13,7 @@ function RequestConfirmation() {
         <h1>Solicitação enviada</h1>
         <p>Enviamos a solicitação a instituição escolhida.</p>
         <p>Em breve ela irá retornar o contato pelo e-mail cadastrado na plataforma.</p>
-        <Link to='/liberation'>Listar escolas</Link>
+        <Link to='/documents-school'>Enviar fotos</Link>
       </div>
     </div>
   );

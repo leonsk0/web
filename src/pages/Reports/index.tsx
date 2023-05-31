@@ -72,7 +72,7 @@ export default function Report() {
             <span>Data da solicitação:</span>
             <span>08/12/2022</span>
             </div>
-            <Link to='/confirmation'>Enviar relatório</Link>
+            <Link to='/confirmation-report'>Baixar relatório</Link>
           </footer>
       </div>
       </div>

@@ -90,7 +90,7 @@ export default function SendDocuments() {
             <span>Data da solicitação:</span>
             <span>08/12/2022</span>
             </div>
-            <Link to='/confirmation'>Enviar relatório</Link>
+            <Link to='/confirmation-documents'>Enviar documentos</Link>
           </footer>
       </div>
       </div>

@@ -13,7 +13,7 @@ function Confirmation() {
         <h1>Cadastro concluído</h1>
         <p>Agora você faz parte da plataforma da Creseri.</p>
         <p>Tenha uma ótima experiência.</p>
-        <Link to='/school-list'>Ir para o login</Link>
+        <Link to='/school-list'>Ver escolas</Link>
       </div>
     </div>
   );

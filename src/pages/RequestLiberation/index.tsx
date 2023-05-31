@@ -39,12 +39,13 @@ export default function RequestLiberation() {
             <h2 className="details-title">Liberação de aluno</h2>
             <span className="details-description">Gostaria de fazer uma solicitação para liberar seu filho?</span>
             <br />
-            <Link className="requestLiberation" to=''>+ Fazer pedido de liberação</Link>
-            <Link className="requestLiberation" to=''>Ver pedidos de liberação anteriores</Link>
+            <Link className="requestLiberation" to='/liberation-request'>+ Fazer pedido de liberação</Link>
+            <br />
+            <Link className="requestLiberation" to='/report'>Ver pedidos de liberação anteriores</Link>
           </div>
 
           <div className="detailsButton">
-            <Link className="linkButton" to='/liberation-confirmation'>Entrar em contato</Link>
+            <Link className="linkButton" to=''>Entrar em contato</Link>
           </div>
         </div>
       </div>

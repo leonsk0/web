@@ -44,7 +44,7 @@ export default function LiberationRequest() {
             <span>Data da solicitação:</span>
             <span>08/12/2022</span>
             </div>
-            <Link to='/confirmation'>Pedir liberação</Link>
+            <Link to='/liberation-confirmation'>Pedir liberação</Link>
           </footer>
       </div>
       </div>
