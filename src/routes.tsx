@@ -14,6 +14,14 @@ import SendDocuments from "./pages/SendDocuments";
 import ConfirmationDocuments from "./pages/ConfirmationDocuments";
 import ConfirmationReports from "./pages/ConfirmationReports";
 import ConfirmationSchool from "./pages/ConfirmationSchool";
+import Demand from "./pages/Demand";
+import ConfirmationRegister from "./pages/ConfirmationRegister";
+import RegisterStudent from "./pages/RegisterStudent";
+import ConfirmationStudent from "./pages/ConfirmationStudent";
+import Release from "./pages/Release";
+import LiberationReason from "./pages/LiberationReason";
+import ConfirmationRelease from "./pages/ConfirmationRelease";
+import ConfirmationReport from "./pages/ConfirmationReport";
 
 function Routes() {
     return (
@@ -35,7 +43,14 @@ function Routes() {
 
             <Route path="/school" component={CreateSchool} />
             <Route path="/confirmation-school" component={ConfirmationSchool} />
-            <Route path="/demand" component={ConfirmationSchool} />
+            <Route path="/demand" component={Demand} />
+            <Route path="/confirmation-register" component={ConfirmationRegister} />
+            <Route path="/register-student" component={RegisterStudent} />
+            <Route path="/confirmation-student" component={ConfirmationStudent} />
+            <Route path="/release" component={Release} />
+            <Route path="/liberation-reason" component={LiberationReason} />
+            <Route path="/confirmation-reason" component={ConfirmationRelease} />
+            <Route path="/send-report" component={ConfirmationReport} />
         </BrowserRouter>
     );
 }

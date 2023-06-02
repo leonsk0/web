@@ -6,15 +6,15 @@ import './styles.css';
 import { Link } from "react-router-dom";
 import FormInput from "../../components/FormInput";
 
-export default function LiberationRequest() {
+export default function LiberationReason() {
 
   const [motivo, setMotivo] = useState('');
 
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader title="Relatório"/>
+      <PageHeader title="Envio de mensagem"/>
       <div className="containerContent">
-        <h2>Descreva os motivos para liberar o aluno da aula atual</h2>
+        <h2>Descreva os próximos passos que o responsável precisará fazer a seguir</h2>
       </div>
 
       <div className="form">
@@ -49,7 +49,7 @@ export default function LiberationRequest() {
             <span>Data da solicitação:</span>
             <span>08/12/2022</span>
             </div>
-            <Link to='/liberation-confirmation'>Pedir liberação</Link>
+            <Link to='/confirmation-reason'>Concluir aprovação</Link>
           </footer>
       </div>
       </div>
