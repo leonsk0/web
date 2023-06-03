@@ -9,6 +9,7 @@ type CardProps = {
 
 export function Card({ path, name}: CardProps) {
   return (
+    <Link to='/details' className="link">
     <div className="containerCard">
   <div className="cardImage">
     <img src={path} alt={`Foto de ${name}`} />
@@ -19,9 +20,9 @@ export function Card({ path, name}: CardProps) {
         <img src={logo} alt="" />
       </div> 
     </div>
-    <p className="name"><Link to='/details' className="link">{name}</Link></p>
+    <p className="name">{name}</p>
   </div>
 </div>
-
+</Link>
   )
 }

@@ -18,7 +18,7 @@ export default function RequestLiberation() {
         <div className="containerDescription">
           
         <div id="containerTitle" className="detailsTitle">
-            <h2 id="title" className="details-title">EMEF. Pedro Simões</h2>
+            <h2 id="title" className="details-title">EMEF. Alfredo</h2>
             <p id="description" className="details-description">Presta incrições para o Ensino Fundamental I, II e Ensino Médio, nos períodos de entre Janeiro e Fevereiro. Vagas Remanescentes não estão disponíveis.</p>
         </div>
 
@@ -38,14 +38,10 @@ export default function RequestLiberation() {
           <div className="detailsDescription">       
             <h2 className="details-title">Liberação de aluno</h2>
             <span className="details-description">Gostaria de fazer uma solicitação para liberar seu filho?</span>
-            <br />
-            <Link className="requestLiberation" to='/liberation-request'>+ Fazer pedido de liberação</Link>
-            <br />
-            <Link className="requestLiberation" to='/report'>Ver pedidos de liberação anteriores</Link>
           </div>
 
           <div className="detailsButton">
-            <Link className="linkButton" to=''>Entrar em contato</Link>
+            <Link className="linkButton" to='/liberation-request'>Fazer pedido de liberação</Link>
           </div>
         </div>
       </div>

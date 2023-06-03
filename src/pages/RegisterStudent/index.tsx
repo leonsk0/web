@@ -10,7 +10,7 @@ export default function RegisterStudent() {
   const [sala, setSala] = useState('');
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader title="Análise de documentos"/>
+      <PageHeader title="Aprovação de cadastro"/>
       <div className="containerContent">
         <h2>Estes são os resultados dos pedidos de cadastro na instituição</h2>
       </div>

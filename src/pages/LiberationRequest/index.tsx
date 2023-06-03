@@ -12,7 +12,7 @@ export default function LiberationRequest() {
 
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader title="Relatório"/>
+      <PageHeader title="Envio de mensagem"/>
       <div className="containerContent">
         <h2>Descreva os motivos para liberar o aluno da aula atual</h2>
       </div>

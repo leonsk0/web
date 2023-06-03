@@ -13,7 +13,7 @@ function ConfirmationRelease() {
         <h1>Deseja enviar o relatório?</h1>
         <p>Será enviado um relatório contendo os dados da liberação do aluno.</p>
         <div className='div-confirm'>
-          <Link to='/'>Não</Link>
+          <Link to='/demand'>Não</Link>
           <Link to='/send-report'>Sim</Link>
         </div>
       </div>

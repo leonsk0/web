@@ -36,7 +36,7 @@ export function ListSchool() {
       </div>
       <div className="div-display">
         <Card path={school} type="public" name="EMEF Yolanda Conte" />
-        <Card path={school} type="private" name="Integração" />
+        <Card path={school} type="private" name="Alfredo" />
         <Card path={school} type="public" name="ETEC Ruth Cardoso" />
       </div>
     </div>

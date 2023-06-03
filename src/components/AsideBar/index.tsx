@@ -16,7 +16,7 @@ export function AsideBar() {
       <p className="p-header">Ao clicar, você poderá ver mais detalhes sobre a instituição de ensino.</p>
     </div>
     <div className='asideButton'>
-      <Link to="/"><img className='asideIcon' src={logout} alt="" /></Link>
+      <Link to="/"><img className='asideIcon' src={logout} alt="" />Sair</Link>
     </div>
     </div>
   </aside>

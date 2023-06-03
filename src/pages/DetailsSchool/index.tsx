@@ -18,7 +18,7 @@ export default function DetailsSchool() {
         <div className="containerDescription">
           
         <div id="containerTitle" className="detailsTitle">
-            <h2 id="title" className="details-title">EMEF. Pedro Simões</h2>
+            <h2 id="title" className="details-title">EMEF. Alfredo</h2>
             <p id="description" className="details-description">Presta incrições para o Ensino Fundamental I, II e Ensino Médio, nos períodos de entre Janeiro e Fevereiro. Vagas Remanescentes não estão disponíveis.</p>
         </div>
 

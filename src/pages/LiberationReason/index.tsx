@@ -14,7 +14,7 @@ export default function LiberationReason() {
     <div id="page-teacher-form" className="container">
       <PageHeader title="Envio de mensagem"/>
       <div className="containerContent">
-        <h2>Descreva os próximos passos que o responsável precisará fazer a seguir</h2>
+        <h2>Descreva os próximos passos que o responsável precisará fazer a seguir para confirmar a liberação do aluno</h2>
       </div>
 
       <div className="form">
@@ -34,7 +34,7 @@ export default function LiberationReason() {
           <div className='inputs-container'>
           <div className='inputs'>
         <FormInput
-            label='Motivo'
+            label='Descreva os próximos passos ao responsável'
             onChange={(e) => {
               setMotivo(e.target.value);
             }}

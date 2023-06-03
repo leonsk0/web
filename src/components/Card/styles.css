@@ -1,7 +1,7 @@
 /* css */
 
 .containerCard {
-    max-width: 30%;
+    /* max-width: 30%; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,6 +13,7 @@
   
   .containerCard:hover {
     background-color: var(--purple);
+    color:var(--white-light);
   }
   
   .containerCard:hover div {
