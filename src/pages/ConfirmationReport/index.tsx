@@ -12,7 +12,7 @@ function ConfirmationReport() {
         <img src={sucessIcon} alt='Ícone de check' />
         <h1>Relatório enviado</h1>
         <p>Foi enviado o relatório ao responsável</p>
-        <Link to='/'>Sair</Link>
+        <Link to='/dashboard'>Voltar</Link>
       </div>
     </div>
   );

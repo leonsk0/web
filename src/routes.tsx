@@ -22,6 +22,7 @@ import Release from "./pages/Release";
 import LiberationReason from "./pages/LiberationReason";
 import ConfirmationRelease from "./pages/ConfirmationRelease";
 import ConfirmationReport from "./pages/ConfirmationReport";
+import { Dashboard } from "./pages/Dashboard";
 
 function Routes() {
     return (
@@ -51,6 +52,7 @@ function Routes() {
             <Route path="/liberation-reason" component={LiberationReason} />
             <Route path="/confirmation-reason" component={ConfirmationRelease} />
             <Route path="/send-report" component={ConfirmationReport} />
+            <Route path="/dashboard" component={Dashboard} />
         </BrowserRouter>
     );
 }

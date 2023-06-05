@@ -36,8 +36,11 @@ export default function RequestLiberation() {
             <p className="details-description">Segunda a Sexta: Das 12:00 ás 18:00</p>
           </div>
           <div className="detailsDescription">       
-            <h2 className="details-title">Liberação de aluno</h2>
+          <h2 className="details-title">Liberação de aluno</h2>
             <span className="details-description">Gostaria de fazer uma solicitação para liberar seu filho?</span>
+            <br />
+            <br />
+            <Link className="requestLiberation" to='/report'>Ver pedidos de liberação anteriores</Link>
           </div>
 
           <div className="detailsButton">
