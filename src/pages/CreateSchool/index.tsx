@@ -65,7 +65,7 @@ type SelectedFile = {
   }
 
   return (
-    <div id="page-teacher-form" className="container">
+    <div id="page-teacher-form" >
       <PageHeader
         title="Cadastre uma instituição"
       />

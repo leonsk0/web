@@ -57,7 +57,6 @@ span {
 .spanCart {
   font: 400 1.25rem Nunito;
   color: var(--gray-3);
-
 }
 
 .pCart {
@@ -65,24 +64,14 @@ span {
   color: var(--gray-4);
 }
 
-#spanCart, #pCart {
+#spanCart,
+#pCart {
   color: var(--white);
 }
 
 #containerCart {
   background-color: var(--purple-light);
   border-color: var(--gray-1);
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--white);
-  border-top: 1px solid var(--gray-6);
-  border-radius: 0px 0px 10px 10px;
-  margin-top: 6.4rem;
-  padding: 32px;
 }
 
 footer div {
@@ -100,17 +89,17 @@ footer div span:last-child {
 }
 
 footer a {
-    width: 40%;
-    height: 5.6rem;
-    background: var(--green);
-    color: var(--white-light);
-    border: 0;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    font: 700 1.6rem Inter;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
+  width: 40%;
+  height: 5.6rem;
+  background: var(--green);
+  color: var(--white-light);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
 }
