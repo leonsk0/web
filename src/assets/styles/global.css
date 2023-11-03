@@ -10,6 +10,7 @@
   --purple-light: #7949ff;
   --purple-dark: #602ad9;
   --purple-light-secondary: #f2ebf5;
+  --purple-dark-secondary: #4d22aa;
   --yellow: #ffe600;
   --yellow-light: #ffec44;
   --yellow-dark: #f6dd00;
@@ -42,9 +43,12 @@
 }
 
 html,
-body,
-#root {
+body {
   height: 100vh;
+}
+
+#root {
+  height: 100%;
 }
 
 body {
@@ -70,6 +74,33 @@ textarea {
   margin: 0 auto;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  width: 210px;
+  height: 54px;
+
+  padding: 15px 54px;
+  border-radius: 6px;
+
+  font-size: 1.5rem;
+  color: var(--white-light);
+  text-decoration: none;
+
+  border: 2px solid var(--purple-dark-secondary);
+}
+
+.btn-dark {
+  background-color: var(--purple-dark-secondary);
+}
+
+.btn-transparent {
+  background-color: transparent;
+}
+
 @media screen and (max-width: 992px) {
   .container {
     padding: 0 1.5rem;
@@ -82,8 +113,8 @@ textarea {
   }
 }
 
-/* @media (min-width: 767px) {
+@media (min-width: 767px) {
   :root {
     font-size: 62.5%;
   }
-} */
+}

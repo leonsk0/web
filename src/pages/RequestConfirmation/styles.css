@@ -34,22 +34,3 @@
 
   text-align: center;
 }
-
-.recovery-success .recovery-background a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  background-color: var(--purple-dark);
-
-  width: 210px;
-  height: 54px;
-
-  padding: 15px 54px;
-  border: 2px solid #602AD9;
-  border-radius: 6px;
-
-  font-size: 1.5rem;
-  color: var(--white-light);
-  text-decoration: none;
-}
