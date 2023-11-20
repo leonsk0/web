@@ -1,82 +1,112 @@
-import PageHeader from "../../components/PageHeader";
-
-import './styles.css';
 import { Link } from "react-router-dom";
 
-export default function Report() {
+import PageHeader from "../../components/PageHeader";
+import styles from "./styles.module.css";
 
+export default function Reports() {
   return (
-    <div id="page-teacher-form" className="container">
-      <PageHeader title="Relatório"/>
-      <div className="containerContent">
-        <h2>Estes são os resultados dos pedidos de liberação do aluno André da Guerra</h2>
-      </div>
+    <div id={styles.reportsPage}>
+      <PageHeader
+        title="Pedidos de liberação"
+        children={
+          <p>
+            <strong>
+              Estes são os resultados dos pedidos de liberação do aluno André da
+              Guerra
+            </strong>
+          </p>
+        }
+      />
 
-      <div className="form">
-      <div className="mainDetails">
-        <div className="containerDetails">
-
-          <div className="containerPersona">
-            <div>
-              <div className="divPhoto"></div>
+      <div className={styles.reportsContainer}>
+        <div className={styles.reportsCard}>
+          <div className={styles.reportsCardContent}>
+            <div className={styles.containerPersona}>
+              <div>
+                <div className={styles.divPhoto}></div>
+              </div>
+              <div className={styles.divText}>
+                <h3>André da Guerra</h3>
+                <span>Aluno do 1º do Ensino Médio</span>
+              </div>
             </div>
-            <div className="divText">
-            <h3>André da Guerra</h3>
-            <span>Aluno do 1º do Ensino Médio</span>
+
+            <div className={styles.containerTextDescription}>
+              <p className={styles.textDescription}>
+                O pedido foi realizado pelo responsável Cleiton da Guerra, pois
+                o garoto quer assistir o neymar ganhar o hexa.
+              </p>
+              <div>
+                <span>Data da solicitação:</span>
+                <span>08/12/2022</span>
+              </div>
+            </div>
+
+            <div className={styles.daysOfWeekCardsContainer}>
+              <div className={styles.dayOfWeekCard}>
+                <span className={styles.dayOfWeekSpanCard}>Dia</span>
+                <p className={styles.dayOfWeekParagraphCard}>Segunda</p>
+                <span className={styles.dayOfWeekSpanCard}>Horário</span>
+                <p className={styles.dayOfWeekParagraphCard}>-</p>
+              </div>
+
+              <div className={styles.dayOfWeekCard}>
+                <span className={styles.dayOfWeekSpanCard}>Dia</span>
+                <p className={styles.dayOfWeekParagraphCard}>Terça</p>
+                <span className={styles.dayOfWeekSpanCard}>Horário</span>
+                <p className={styles.dayOfWeekParagraphCard}>-</p>
+              </div>
+
+              <div className={styles.dayOfWeekCard}>
+                <span className={styles.dayOfWeekSpanCard}>Dia</span>
+                <p className={styles.dayOfWeekParagraphCard}>Quarta</p>
+                <span className={styles.dayOfWeekSpanCard}>Horário</span>
+                <p className={styles.dayOfWeekParagraphCard}>-</p>
+              </div>
+
+              <div id={styles.dayOfWeekCard} className={styles.dayOfWeekCard}>
+                <span
+                  id={styles.dayOfWeekSpanCard}
+                  className={styles.dayOfWeekSpanCard}
+                >
+                  Dia
+                </span>
+                <p
+                  id={styles.dayOfWeekParagraphCard}
+                  className={styles.dayOfWeekParagraphCard}
+                >
+                  Quinta
+                </p>
+                <span
+                  id={styles.dayOfWeekSpanCard}
+                  className={styles.dayOfWeekSpanCard}
+                >
+                  Horário
+                </span>
+                <p
+                  id={styles.dayOfWeekParagraphCard}
+                  className={styles.dayOfWeekParagraphCard}
+                >
+                  8h - 18h
+                </p>
+              </div>
+
+              <div className={styles.dayOfWeekCard}>
+                <span className={styles.dayOfWeekSpanCard}>Dia</span>
+                <p className={styles.dayOfWeekParagraphCard}>Sexta</p>
+                <span className={styles.dayOfWeekSpanCard}>Horário</span>
+                <p className={styles.dayOfWeekParagraphCard}>-</p>
+              </div>
             </div>
           </div>
-
-          <div className="containerTextDescription">
-            <p className="containerTextP">O pedido foi realizado pelo responsável Cleiton da Guerra, pois o garoto quer assistir o neymar ganhar o hexa.</p>
+          <div className={styles.submitContainer}>
+            <Link id={styles.recuse} to="">
+              Recusar liberação
+            </Link>
+            <Link to="/liberation-reason">Aceitar liberação</Link>
           </div>
-
-          <div className="containerListCart">
-            <div className="containerCart">
-              <span className="spanCart">Dia</span>
-              <p className="pCart">Segunda</p>
-              <span className="spanCart">Horário</span>
-              <p className="pCart">-</p>
-            </div>
-
-            <div className="containerCart">
-              <span className="spanCart">Dia</span>
-              <p className="pCart">Terça</p>
-              <span className="spanCart">Horário</span>
-              <p className="pCart">-</p>
-            </div>
-
-            <div className="containerCart">
-              <span className="spanCart">Dia</span>
-              <p className="pCart">Quarta</p>
-              <span className="spanCart">Horário</span>
-              <p className="pCart">-</p>
-            </div>
-
-            <div id="containerCart" className="containerCart">
-              <span id="spanCart" className="spanCart">Dia</span>
-              <p id="pCart" className="pCart">Quinta</p>
-              <span id="spanCart" className="spanCart">Horário</span>
-              <p id="pCart" className="pCart">8h - 18h</p>
-            </div>
-
-            <div className="containerCart">
-              <span className="spanCart">Dia</span>
-              <p className="pCart">Sexta</p>
-              <span className="spanCart">Horário</span>
-              <p className="pCart">-</p>
-            </div>
-          </div>
-
-          <footer>
-            <div>
-            <span>Data da solicitação:</span>
-            <span>08/12/2022</span>
-            </div>
-            <Link to='/confirmation-report'>Baixar relatório</Link>
-          </footer>
+        </div>
       </div>
-      </div>
-    </div>
     </div>
   );
 }

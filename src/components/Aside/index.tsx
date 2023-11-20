@@ -1,12 +1,12 @@
-import './styles.css';
+import "./styles.css";
 
-import AsideLogo from '../../assets/images/asideLogo.svg';
+import AsideLogo from "../../assets/images/asideLogo.svg";
 
 function Aside() {
   return (
-    <aside className='aside'>
-      <div className='background-image'>
-        <img src={AsideLogo} alt='proffy-logo' />
+    <aside className="aside">
+      <div className="background-image">
+        <img src={AsideLogo} alt="proffy-logo" />
       </div>
     </aside>
   );

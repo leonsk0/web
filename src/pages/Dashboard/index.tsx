@@ -1,26 +1,37 @@
-import school from '../../assets/images/school.png'
+import { Card } from "../../components/Card";
+import Aside from "../../components/Aside";
 
-import "./styles.css"
-import { CardList } from '../../components/CardList'
+import template from "../../assets/images/template.png";
+
+import styles from "./styles.module.css";
 
 export function Dashboard() {
-
   return (
-    <div className="div-container">
-  
-    <div className="div-content">
-      <div className="div-header">
-        <p className ="p-inst">
-          Escolha o que deseja fazer:
-        </p>
-
+    <div className={styles.page}>
+      <div className={styles.asideWrapper}>
+        <Aside />
       </div>
-      <div className="div-display">
-        <CardList path={school} type="public" name="Ver pedidos de cadastro" />
-        <CardList path={school} type="private" name="Ver pedidos de liberação" />
+      <div className={`${styles.dashboardContainer} container`}>
+        <div className={styles.dashboardContent}>
+          <div className={styles.dashboardHeader}>
+            <p>Escolha o que deseja fazer:</p>
+          </div>
+          <div className={styles.cardListContainer}>
+            <Card
+              link="/demand"
+              path={template}
+              type="public"
+              name="Ver pedidos de cadastro"
+            />
+            <Card
+              link="/demand"
+              path={template}
+              type="private"
+              name="Ver pedidos de liberação"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-  )
+  );
 }

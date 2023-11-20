@@ -1,0 +1,38 @@
+.successPage {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--purple);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 30px;
+}
+
+.successTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.successContainer h1 {
+  color: var(--white-light);
+}
+
+.successContainer p {
+  color: var(--gray-8);
+  max-width: 25rem;
+  text-align: center;
+}
+
+.successContainer p + p {
+  margin-top: 15px;
+}

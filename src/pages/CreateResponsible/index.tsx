@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Aside from "../../components/Aside";
 import FormInput from "../../components/FormInput";
 
-import "./styles.css";
+import styles from "./styles.module.css";
 
 import backIcon from "../../assets/images/icons/back.svg";
 
@@ -17,16 +17,16 @@ function CreateResponsible() {
   const [number, setNumber] = useState("");
 
   return (
-    <div className="page">
-      <div className="content-container">
-        <div className="link-container">
+    <div className={styles.page}>
+      <div className={`${styles.contentContainer} container`}>
+        <header className={styles.linkContainer}>
           <Link to="/">
             <img src={backIcon} alt="Ícone para voltar" />
           </Link>
-        </div>
+        </header>
 
-        <div className="form-container">
-          <div className="title-container">
+        <div className={styles.formContainer}>
+          <div className={styles.titleContainer}>
             <h2>Cadastro</h2>
             <p>Preencha os dados abaixo para começar.</p>
           </div>
@@ -80,13 +80,13 @@ function CreateResponsible() {
               isPassword
             />
           </div>
-          <div className="button-container">
+          <div className={styles.buttonContainer}>
             <Link to="/confirmation">Concluir cadastro</Link>
           </div>
         </div>
       </div>
 
-      <div className="aside-wrapper">
+      <div className={styles.asideWrapper}>
         <Aside />
       </div>
     </div>

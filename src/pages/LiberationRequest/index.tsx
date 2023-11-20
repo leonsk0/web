@@ -1,59 +1,62 @@
 import { useState } from "react";
-import Input from "../../components/Input";
-import PageHeader from "../../components/PageHeader";
-
-import './styles.css';
 import { Link } from "react-router-dom";
+
+import PageHeader from "../../components/PageHeader";
 import FormInput from "../../components/FormInput";
 
-export default function LiberationRequest() {
+import styles from "./styles.module.css";
 
-  const [motivo, setMotivo] = useState('');
+export default function LiberationRequest() {
+  const [request, setRequest] = useState("");
 
   return (
-    <div id="page-teacher-form" className="container">
-      <PageHeader title="Envio de mensagem"/>
-      <div className="containerContent">
-        <h2>Descreva os motivos para liberar o aluno da aula atual</h2>
-      </div>
+    <div id={styles.liberationRequestPage}>
+      <PageHeader
+        title="Envio de mensagem"
+        children={
+          <p>
+            <strong>
+              Descreva os motivos para liberar o aluno da aula atual
+            </strong>
+          </p>
+        }
+      />
 
-      <div className="form">
-      <div className="mainDetails">
-        <div className="containerDetails">
-
-          <div className="containerPersona">
-            <div>
-              <div className="divPhoto"></div>
+      <div className={`${styles.liberationRequestContainer} container`}>
+        <div className={styles.liberationRequestCard}>
+          <div className={styles.liberationRequestCardContent}>
+            <div className={styles.containerPersona}>
+              <div>
+                <div className={styles.divPhoto}></div>
+              </div>
+              <div className={styles.divText}>
+                <h3>André da Guerra</h3>
+                <span>Responsável: Cleiton da Guerra</span>
+              </div>
             </div>
-            <div className="divText">
-            <h3>André da Guerra</h3>
-            <span>Responsável: Cleiton da Guerra</span>
+
+            <div className={styles.inputsContainer}>
+              <div className="inputs">
+                <FormInput
+                  label="Motivo"
+                  onChange={(e) => {
+                    setRequest(e.target.value);
+                  }}
+                  value={request}
+                  isPassword={false}
+                />
+              </div>
             </div>
           </div>
-
-          <div className='inputs-container'>
-          <div className='inputs'>
-        <FormInput
-            label='Motivo'
-            onChange={(e) => {
-              setMotivo(e.target.value);
-            }}
-            value={motivo}
-            isPassword={false}
-          />
-        </div>
-        </div>
-
-          <footer>
+          <div className={styles.submitContainer}>
             <div>
-            <span>Data da solicitação:</span>
-            <span>08/12/2022</span>
+              <span>Data da solicitação:</span>
+              <span>08/12/2022</span>
             </div>
-            <Link to='/liberation-confirmation'>Pedir liberação</Link>
-          </footer>
+            <Link to="/liberation-confirmation">Pedir liberação</Link>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
     </div>
   );
 }

@@ -1,0 +1,187 @@
+#releasePage {
+  display: flex;
+  flex-direction: column;
+  background: var(--purple-light-secondary);
+  min-height: 100vh;
+}
+
+.releaseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  width: 100%;
+  padding: 3rem;
+  border-radius: 0.8rem;
+}
+
+.releaseCard {
+  min-width: 74rem;
+  border-radius: 20px;
+  background: var(--white-light);
+}
+
+.releaseCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  padding: 3.2rem;
+}
+
+.containerPersona {
+  display: flex;
+  align-items: center;
+}
+
+.divPhoto {
+  width: 80px;
+  height: 80px;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 80px;
+
+  margin-right: 16px;
+}
+
+.divText {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: var(--gray-2);
+}
+
+.containerTextDescription div {
+  display: flex;
+  padding-top: 40px;
+}
+
+.containerTextDescription div span {
+  padding-right: 16px;
+  font: 400 1.75rem Inter;
+}
+
+.containerTextDescription div span:last-child {
+  color: var(--purple);
+  font: 800 1.75rem Inter;
+}
+
+.textDescription {
+  max-width: 616px;
+  color: var(--gray-2);
+  font: 400 1.75rem Nunito;
+}
+
+.daysOfWeekCardsContainer {
+  display: flex;
+  gap: 1.6rem;
+
+  margin-top: 1.6rem;
+}
+
+.dayOfWeekCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 122px;
+  height: 136px;
+  border: 1px solid var(--gray-4);
+  border-radius: 8px;
+  background-color: var(--gray-7);
+  padding: 16px;
+}
+
+#dayOfWeekCard {
+  background-color: var(--purple-light);
+  border-color: var(--gray-1);
+}
+
+.dayOfWeekSpanCard {
+  font: 400 1.25rem Nunito;
+  color: var(--gray-3);
+}
+
+.dayOfWeekParagraphCard {
+  font: 800 1.75rem Inter;
+  color: var(--gray-4);
+}
+
+#dayOfWeekSpanCard,
+#dayOfWeekParagraphCard {
+  color: var(--white);
+}
+
+.submitContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: var(--white);
+  padding: 32px 34px;
+  border-radius: 0.8rem;
+}
+
+.submitContainer a {
+  width: 40%;
+  height: 5.6rem;
+  background: var(--green);
+  color: var(--white-light);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#recuse {
+  background: var(--red);
+}
+
+@media screen and (max-width: 1024px) {
+  .releaseCard {
+    min-width: unset;
+  }
+
+  .daysOfWeekCardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dayOfWeekCard {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .submitContainer {
+    flex-direction: column-reverse;
+    justify-content: unset;
+    gap: 15px;
+  }
+
+  .submitContainer a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .releaseCardContent {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .releaseCardContent {
+    padding: 3rem 2rem;
+  }
+}
