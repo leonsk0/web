@@ -1,0 +1,264 @@
+#pageTeacherForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: var(--white);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.formContainer form {
+  min-width: 74rem;
+  padding: 64px 80px;
+  border-radius: 20px;
+
+  background: var(--white-light);
+}
+
+.titlePhoto {
+  padding-top: 16px;
+  color: var(--gray-3);
+}
+
+.photoContainer {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--gray-7);
+  border: 1px solid var(--gray-8);
+  outline: 0;
+  padding: 0 1.6rem;
+  font: 1.6rem Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.iconNuvem {
+  margin-top: 50px;
+}
+
+.customLabel {
+  text-align: center;
+}
+
+.containerImage {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: 1px solid var(--gray-8);
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.iconPhoto {
+  margin: 12px;
+}
+
+.imageWrapper {
+  width: 520px;
+}
+
+.imageName {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttonPhoto,
+.buttonPhoto:hover {
+  margin-top: 6px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.photo {
+  border: none;
+  outline: none;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* #page-teacher-form .header-content {
+     margin-bottom: 6.4rem;
+   } */
+
+.formContainer fieldset {
+  border: 0;
+}
+
+.formContainer fieldset + fieldset {
+  margin-top: 6.4rem;
+}
+
+.formContainer fieldset legend {
+  font: 700 2.4rem Nunito;
+  color: var(--gray-1);
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--gray-8);
+}
+
+.formContainer fieldset legend button {
+  background: none;
+  border: 0;
+  color: var(--purple);
+  font: 700 1.6rem Inter;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.formContainer fieldset legend button:hover {
+  color: var(--purple-dark);
+}
+
+.formContainer fieldset .input-block + .textarea-block,
+.formContainer fieldset .select-block + .input-block {
+  margin-top: 2.4rem;
+}
+
+.formContainer label {
+  color: var(--gray-3);
+}
+
+.submitContainer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--gray-3);
+}
+
+.submitContainer img {
+  margin-right: 2rem;
+}
+
+.submitContainer a {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--green);
+  color: var(--white-light);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+.submitContainer button:hover {
+  background: var(--green-dark);
+}
+
+.submitContainer {
+  justify-content: center;
+}
+
+.submitContainer {
+  min-width: 74rem;
+}
+
+.submitContainer a {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  #pageTeacherForm .page-header .header-content {
+    margin-bottom: 0;
+  }
+
+  #pageTeacherForm main fieldset {
+    padding: 0 6.4rem;
+  }
+
+  #pageTeacherForm main .schedule-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1.6rem;
+  }
+
+  #pageTeacherForm main .schedule-item .input-block {
+    margin-top: 0 !important;
+  }
+
+  #pageTeacherForm main footer {
+    padding: 4rem 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #pageTeacherForm main footer p {
+    justify-content: space-between;
+  }
+
+  #pageTeacherForm main footer button {
+    width: 20rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #pageTeacherForm main fieldset {
+    border: 0;
+    padding: 0 2.4rem 0 2.4rem;
+  }
+
+  #pageTeacherForm main fieldset + fieldset {
+    margin-top: 4.4rem;
+  }
+
+  #pageTeacherForm main fieldset legend {
+    font-size: 1.75rem;
+  }
+  #pageTeacherForm main footer {
+    padding: 2.4rem;
+    margin-top: 4.4rem;
+  }
+  #pageTeacherForm main footer a {
+    margin-top: 0;
+  }
+
+  .formContainer {
+    margin: 0;
+  }
+
+  .formContainer form {
+    background: var(--white);
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #pageTeacherForm form {
+    min-width: unset;
+  }
+
+  .submitContainer {
+    min-width: 20rem;
+  }
+}

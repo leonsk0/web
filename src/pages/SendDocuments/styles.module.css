@@ -1,0 +1,200 @@
+#sendDocumentsPage {
+  background: var(--purple-light-secondary);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sendDocumentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  width: 100%;
+  padding: 3rem;
+  border-radius: 0.8rem;
+}
+
+.sendDocumentsCard {
+  min-width: 74rem;
+  border-radius: 20px;
+  background: var(--white-light);
+}
+
+.sendDocumentsCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  padding: 3.2rem;
+}
+
+.containerPersona {
+  display: flex;
+  align-items: center;
+}
+
+.divPhoto {
+  width: 80px;
+  height: 80px;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 80px;
+
+  margin-right: 16px;
+}
+
+.divText {
+  display: flex;
+  flex-direction: column;
+}
+
+.textDescription {
+  color: var(--gray-2);
+  font: 400 1.75rem Nunito;
+}
+
+.titlePhoto {
+  padding-top: 16px;
+  color: var(--gray-3);
+}
+
+.containerPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photoContainerSend {
+  width: 92%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--gray-7);
+  border: 1px solid var(--gray-8);
+  outline: 0;
+  padding: 0 1.6rem;
+  font: 1.6rem Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.iconNuvem {
+  margin-top: 50px;
+}
+
+.customLabel {
+  text-align: center;
+}
+
+.photo {
+  border: none;
+  outline: none;
+  font-size: 0;
+  opacity: 0;
+}
+
+.containerSendImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+
+  border: 1px solid var(--gray-8);
+  border-radius: 8px;
+  margin-top: 12px;
+  padding: 0px 12px;
+}
+
+.imageSendWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.imageSendName {
+  margin-left: 16px;
+}
+
+#sendDocumentsPage span {
+  color: var(--gray-2);
+}
+
+.buttonPhoto,
+.buttonPhoto:hover {
+  margin-top: 6px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.submitContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--white);
+  padding: 32px 34px;
+  border-radius: 0.8rem;
+}
+
+.submitContainer span {
+  padding-right: 16px;
+  font: 400 1.75rem Inter;
+}
+
+.submitContainer span:last-child {
+  color: var(--purple);
+  font: 800 1.75rem Inter;
+}
+
+.submitContainer a {
+  width: 40%;
+  height: 5.6rem;
+  background: var(--green);
+  color: var(--white-light);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .sendDocumentsCard {
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .submitContainer {
+    flex-direction: column;
+    justify-content: unset;
+    gap: 15px;
+  }
+
+  .submitContainer a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sendDocumentsCardContent {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .sendDocumentsCardContent {
+    padding: 3rem 0.9rem;
+  }
+}

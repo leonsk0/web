@@ -1,0 +1,131 @@
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.asideWrapper {
+  flex: 1;
+  min-height: 100vh;
+}
+
+.asideWrapper aside {
+  height: 100%;
+}
+
+.listSchoolContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  padding: 3rem;
+  background-color: #f2ebf5;
+}
+
+.listSchoolHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  gap: 25px;
+}
+
+.listSchoolHeader p {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 34px;
+  font-weight: 400;
+  color: #0d3b66;
+}
+
+.listSchoolHeader p,
+.listSchoolHeader span {
+  color: #7532de !important;
+}
+
+.listSchoolHeader span {
+  font-weight: 800;
+}
+
+.selectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectWrapper > img {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.filterSelect {
+  width: 210px;
+  height: 48px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f5f8fa;
+  outline: none;
+  appearance: none;
+  font-family: Nunito;
+  font-size: 16px;
+  color: #7532de;
+}
+
+.cardListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  padding-top: 32px;
+}
+
+.cardListContainer .type-icon div {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardListContainer .type-icon div img {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 15px;
+  top: -34px;
+  border: 3px solid #fff;
+  background-color: #de81ff;
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .asideWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listSchoolContainer {
+    gap: 3rem;
+    margin: unset;
+  }
+}
