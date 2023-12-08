@@ -30,7 +30,7 @@ export default function Release() {
             <p className="containerTextP">O pedido foi realizado pelo responsável Cleiton da Guerra, pois ele precisava do garoto para viajar para outros países a fim de procurar o seu padastro careca.</p>
             <div>
             <span>Data da solicitação:</span>
-            <span>08/12/2022</span>
+            <span>09/12/2023</span>
           </div>
           </div>
 

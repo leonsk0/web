@@ -66,7 +66,7 @@ export default function RegisterStudent() {
           <footer>
           <div>
             <span>Data da solicitação:</span>
-            <span>08/12/2022</span>
+            <span>09/12/2023</span>
             </div>
             <Link to='/confirmation-student'>Aceitar cadastro</Link>
           </footer>
