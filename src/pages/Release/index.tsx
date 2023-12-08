@@ -27,7 +27,7 @@ export default function Release() {
           </div>
 
           <div className="containerTextDescription">
-            <p className="containerTextP">O pedido foi realizado pelo responsável Cleiton da Guerra, pois ele precisava do garoto para viajar para outros países a fim de procurar o seu padastro careca.</p>
+            <p className="containerTextP">O pedido foi realizado pelo responsável Cleiton da Guerra, pois ele precisa levar o filho ao médico.</p>
             <div>
             <span>Data da solicitação:</span>
             <span>09/12/2023</span>
